@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-
+    <title>Registration</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/68e062dd53.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -76,65 +74,45 @@
     </header>
     <div class="product-top cart-top">
         <div class="container product-top-container">
-            <p class="product-top-txt-left">Shopping Cart</p>
+            <p class="product-top-txt-left">Registration</p>
         </div>
     </div>
-    <section class="container cart_main">
-        <div class="cart_items">
-            <figure class="cart_item_1">
-                <img src="img/cart-item-1.png" alt="Cart-item">
-                <div class="cart_item_info">
-                    <div class="cart_item_heading">
-                        <h1 class="cart_item_heading_text"> Mango people t-shirt</h1>
-                        <img src="img/close.svg" alt="close">
-                    </div>
-                    <p class="cart_item_info_text">Price: <span class="choice-text-3">$300</span> </p>
-                    <p class="cart_item_info_text">Color: <span class="item-details-txt">Red</span></p>
-                    <p class="cart_item_info_text">Size: <span class="item-details-txt">XL</span></p>
-                    <p class="cart_item_info_text">Quantity: <span class="item_quantity">2</span> </p>
-                </div>
-            </figure>
-            <figure class="cart_item_1">
-                <img src="img/black-man-item.png" alt="Cart-item-2">
-                <div class="cart_item_info">
-                    <div class="cart_item_heading">
-                        <h1 class="cart_item_heading_text"> Mango people t-shirt</h1>
-                        <img src="img/close.svg" alt="close">
-                    </div>
-                    <p class="cart_item_info_text">Price: <span class="choice-text-3">$300</span> </p>
-                    <p class="cart_item_info_text">Color: <span class="item-details-txt">Red</span></p>
-                    <p class="cart_item_info_text">Size: <span class="item-details-txt">XL</span></p>
-                    <p class="cart_item_info_text">Quantity: <span class="item_quantity">2</span> </p>
-                </div>
-            </figure>
-            <div class="cart_buttons">
-                <button type="reset" class="cart_button">
-                    <p class="cart_button_txt">CLEAR SHOPPING CART</p>
-                </button>
-                <button type="submit" class="cart_button">
-                    <p class="cart_button_txt">CONTINUE SHOPPING</p>
-                </button>
+    <div class="container container__registration">
+        <form action="#" class="registration_form">
+            <label for="name" class="registration_name">Your Name</label>
+            <input id="name" type="text" placeholder="First Name" class="regis_input">
+            <input type="text" placeholder="Last Name" class="regis_input">
+            <div class="regis_radio">
+                <input type="radio" id="Male" name="gender" value="Male" class="radio">
+                  <label for="Male" class="radio_label">Male</label>
+                <input type="radio" id="Female" name="gender" value="Female" class="radio">
+                  <label for="Female" class="radio_label">Female</label>
             </div>
-
-        </div>
-        <form class="pay_process" action="#">
-            <h1 class="cart_form_head">SHIPPING ADRESS</h1>
-            <input class="cart_info" type="text" placeholder="Bangladesh">
-            <input class="cart_info" type="text" placeholder="State">
-            <input class="cart_info" type="text" placeholder="Postcode / Zip">
-            <button class="cart_button cart_button_pay_process">
-                <p class="cart_button_txt cart_button_txt_pay_process">GET A QUOTE</p>
+            <label for="email" class="registration_name">Login details</label>
+            <input id="email" type="email" placeholder="Email" class="regis_input">
+            <input type="password" placeholder="Password" class="regis_input">
+            <p class="regis_form_text">Please use 8 or more characters, with at least 1 number and a mixture of
+                uppercase and lowercase letters
+            </p>
+            <button type="submit" class="process_checkout_button regis_button">
+                <p class="regis_button_text">JOIN NOW</p><i class="fas fa-long-arrow-alt-right"></i>
             </button>
-            <div class="cart_checkout">
-                <p class="cart_checkout_sub">SUB TOTAL <span class="cart_checkout_sub_price">$900</span></p>
-                <p class="cart_checkout_grand">GRAND TOTAL <span class="cart_checkout_grand_price">$900</span></p>
-                <hr>
-                <a class="process_checkout_button" href="#">
-                    PROCEED TO CHECKOUT
-                </a>
-            </div>
         </form>
-    </section>
+        <figure class="regis_text">
+            <h1 class="regis_head">LOYALTY HAS ITS PERKS</h1>
+            <p class="regis_text_info">Get in on the loyalty program where you can earn points and unlock serious perks.
+                Starting with these as
+                soon as you join:</p>
+            <ul>
+                <li class="regis_text_info regis_text_info_order">15% off welcome offer </li>
+                <li class="regis_text_info regis_text_info_order">Free shipping, returns and exchanges on all orders
+                </li>
+                <li class="regis_text_info regis_text_info_order">$10 off a purchase on your birthday </li>
+                <li class="regis_text_info regis_text_info_order">Early access to products</li>
+                <li class="regis_text_info regis_text_info_order">Exclusive offers & rewards</li>
+            </ul>
+        </figure>
+    </div>
     <footer>
         <div class="bottom-1">
             <div class="container bottom-2">
@@ -175,3 +153,5 @@
         </div>
     </footer>
 </body>
+
+</html>

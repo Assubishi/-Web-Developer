@@ -502,6 +502,13 @@
   display: flex;
   width: 652px;
   margin-bottom: 40px;
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s;
+}
+
+.cart_item_1:hover {
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
@@ -565,6 +572,17 @@
   padding: 16px 40px;
   border: 1px solid #A4A4A4;
   background-color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cart_button:hover {
+  background-color: #F16D7F;
+  border: 1px solid transparent;
+}
+
+.cart_button:hover .cart_button_txt {
+  color: white;
 }
 
 .cart_button_pay_process {
@@ -662,7 +680,7 @@
   padding: 15px 41px;
   font-family: Lato;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 16px q;
   line-height: 19px;
   color: #FFFFFF;
   margin-top: 17px;
@@ -674,6 +692,122 @@
   border: 1px solid #F16D7F;
   background-color: #fff;
   color: #F16D7F;
+}
+
+.registration_name {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration_form {
+  width: 360px;
+}
+
+.regis_input {
+  border: 1px solid #A4A4A4;
+  width: 100%;
+  margin-top: 21px;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-bottom: 16px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.regis_input:nth-of-type(2) {
+  margin-bottom: 32px;
+}
+
+.regis_radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 33px;
+}
+
+.radio {
+  margin-right: 10px;
+}
+
+.radio_label {
+  margin-right: 20px;
+}
+
+.regis_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 29px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.regis_button:hover .fa-long-arrow-alt-right {
+  color: #F16D7F;
+}
+
+.regis_text {
+  width: 652px;
+  margin-left: 128px;
+}
+
+.regis_text_info {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.regis_text_info_order {
+  list-style-type: none;
+}
+
+.regis_text_info_order::before {
+  content: url("img/stick.svg");
+  margin-right: 22px;
+}
+
+.regis_head {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.regis_form_text {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.fa-long-arrow-alt-right {
+  margin-left: 15px;
+  margin-bottom: 25px;
+  background: transparent;
+  font-size: 35px;
+  color: #fff;
+  padding: 0;
+  height: 10px;
+  width: 17px;
 }
 
 .text-decor, .product-top-txt-right, .col-head-1, .col-txt, .three-details, .filter-text, .cata-sum-text, .cat-category-head, .filter-links, .cat-category-head-2, .cat-category-head-3, .cart_button_txt, .man-head, .man-link, .heading-2, .choice-text-2, .cart-text, .input, .bot-but {
@@ -691,6 +825,12 @@
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.container__registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .top-1 {
