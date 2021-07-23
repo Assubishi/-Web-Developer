@@ -7,6 +7,8 @@
 @import "cart"
 @import "registration"
 
+$width-site: 1140px
+
 .text-decor
     font-family: Lato
     font-size: 14px
@@ -17,7 +19,7 @@
     box-sizing: border-box
 
 .container
-    width: 1140px
+    max-width: $width-site
     margin: 0 auto
     &__registration
         display: flex
@@ -106,28 +108,33 @@
     &:hover
         color: #F16D7F
 
-.container-index-top-2
-    width: 1140px
-    margin: 0 auto
-    height: 764px
-    background-image: url(img/man.png)
-    background-repeat: no-repeat
-    position: left bottom
-
 .top-2
-    height: 764px
     background: #F1E4E6
 
-    &-text
-        display: flex
-        text-transform: uppercase
-        font-family: Lato
-        color: #222222
-        height: 92px
+.container-index-top-2
+    height: 100%
+    display: flex
+    justify-content: space-between
 
-.main-banner-text
-    margin-top: 289px
-    margin-left: 864px
+.index-man
+    display: block
+    width: 48%
+
+.top-head 
+    align-self: center
+    display: flex
+    height: 92px
+  
+    
+.stick
+    height: 100%
+    background-color: #F16D7F
+    color: #F16D7F
+    width: 12px
+    margin-right: 10px
+
+.top-head-text
+    text-transform: uppercase
 
 .text-top
     font-family: 'Lato', sans-serif
@@ -135,6 +142,7 @@
     line-height: 58px
     color: #222222
     font-weight: 900
+    text-transform: uppercase
 
 .luxuries
     font-family: 'Lato', sans-serif
@@ -146,23 +154,22 @@
 .fashion
     color: #F16D7F
 
-.stick
-    width: 12px
-    height: 100%
-    background: #F16D7F
-    margin-right: 16px
+.content
+    padding: 0 2%
 
 .index-boxes
     text-decoration: none
+    width: 32%
 
 .boxes
     display: flex
     justify-content: space-between
-    margin-top: 65px
+    margin-top: 3%
     margin-bottom: 30px
+ 
 
 .box
-    width: 360px
+
     height: 260px
     display: flex
     flex-direction: column
@@ -182,6 +189,17 @@
         filter: brightness(50%)
         box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
 
+.long-box
+    background-image: url(img/long-box.png)
+    height: 180px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+    &:hover
+        filter: brightness(50%)
+        
 .first-box-text
     text-transform: uppercase
     color: white
@@ -199,16 +217,6 @@
     line-height: 19px
     margin-top: 10px
 
-.long-box
-    background-image: url(img/long-box.png)
-    height: 180px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    text-align: center
-
-    &:hover
-        filter: brightness(50%)
 
 .heading-1
     color: #222222
@@ -228,12 +236,13 @@
     margin-bottom: 48px
 
 .big-menu
+    width: &$width-site
     display: flex
     flex-wrap: wrap
     justify-content: space-between
 
 .menu-boxes
-    width: 360px
+    width: 32%
     background: #F8F8F8
     position: relative
 
@@ -242,6 +251,9 @@
 
     &:hover .item-img
         filter: brightness(50%)
+
+.item-img
+    width: 100%
 
 .choice-text-1
     text-transform: uppercase
@@ -358,7 +370,7 @@
     color: #FBFBFB
 
 .bottom-1
-    height: 448px
+    padding-bottom: 126px
     background-image: url(img/bottom-back.png)
     background-repeat: no-repeat
     background-size: cover
@@ -438,7 +450,7 @@
     &-contacts
         display: flex
         justify-content: space-between
-        padding: 30px 0
+        padding: 30px 2%
         font-size: 16px
         line-height: 19px
         color: #FBFBFB
@@ -473,3 +485,6 @@
 
 .fa-twitter
     padding: 9px 9px 8px 8px
+
+
+@import "media_index"
