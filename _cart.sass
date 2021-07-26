@@ -5,23 +5,31 @@
     display: flex
     justify-content: space-between
 
+.cart_items
+    max-width: 652px
+
 .cart_item_1
     display: flex
-    width: 652px
+    width: 100%
     margin-bottom: 40px
     transition: box-shadow 1s
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
     &:hover
         box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
 
+.cart-item-img
+    width: 40%
+
 .cart_item_info
-    padding-top: 22px
+    width: 60%
+    padding-top: 3%
     padding-right: 22px
-    padding-left: 31px
+    padding-left: 3%
 
 .cart_item_heading
     display: flex
     justify-content: space-between
-    margin-bottom: 42px
+    margin-bottom: 10%
 
 .cart_item_heading_text
     font-family: Lato
@@ -78,6 +86,7 @@
     padding-top: 17px
 
 .cart_button_txt
+    text-transform: uppercase
     font-weight: 300
     color: #000000
     @extend .text-decor
@@ -94,7 +103,7 @@
     color: #222222
 
 .cart_info
-    width: 360px
+    width: 100%
     margin-top: 20px
     height: 45px
     border-radius: 0px
@@ -142,7 +151,7 @@
     padding: 15px 41px
     font-family: Lato
     font-weight: 300
-    font-size: 16px q
+    font-size: 16px
     line-height: 19px
     color: #FFFFFF
     margin-top: 17px
