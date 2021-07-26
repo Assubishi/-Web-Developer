@@ -30,7 +30,7 @@
                 </div>
                 <div class="right-top">
                     <ul class="top-left-menu">
-                        <li class="mega-link"> <a class="menu-img-link" href="#"><img class="lines" src="img/lines.svg"
+                        <li class="mega-link mega-link-lines"> <a class="menu-img-link" href="#"><img class="lines" src="img/lines.svg"
                                     alt="Menu"></a>
                             <div class="mega-menu">
                                 <h1 class="menu-heading">menu</h1>
@@ -65,9 +65,9 @@
                             </div>
                         </li>
                         <li class="mega-link"><a class="menu-img-link" href="registration.html"><img src="img/human.svg"
-                                    alt="Human" class="top-human"></a></li>
+                                    alt="Human" class="top-human mega-link-last"></a></li>
                         <li class="mega-link"><a class="menu-img-link" href="cart.html"><img src="img/busket.svg"
-                                    alt="Basket"></a></li>
+                                    alt="Basket" class="mega-link-last"></a></li>
                     </ul>
                 </div>
             </div>
@@ -75,14 +75,14 @@
         </div>
     </header>
     <div class="product-top cart-top">
-        <div class="container product-top-container">
-            <p class="product-top-txt-left">Shopping Cart</p>
+        <div class="container product-top-container product-top-container-catalog">
+            <p class="product-top-txt-left product-top-txt-left-regis">Shopping Cart</p>
         </div>
     </div>
-    <section class="container cart_main">
+    <section class="container content cart_main">
         <div class="cart_items">
             <figure class="cart_item_1">
-                <img src="img/cart-item-1.png" alt="Cart-item">
+                <img class="cart-item-img" src="img/cart-item-1.png" alt="Cart-item">
                 <div class="cart_item_info">
                     <div class="cart_item_heading">
                         <h1 class="cart_item_heading_text"> Mango people t-shirt</h1>
@@ -95,7 +95,7 @@
                 </div>
             </figure>
             <figure class="cart_item_1">
-                <img src="img/black-man-item.png" alt="Cart-item-2">
+                <img class="cart-item-img" src="img/black-man-item.png" alt="Cart-item-2">
                 <div class="cart_item_info">
                     <div class="cart_item_heading">
                         <h1 class="cart_item_heading_text"> Mango people t-shirt</h1>
@@ -109,22 +109,24 @@
             </figure>
             <div class="cart_buttons">
                 <button type="reset" class="cart_button">
-                    <p class="cart_button_txt">CLEAR SHOPPING CART</p>
+                    <p class="cart_button_txt">Clear Shopping Cart</p>
                 </button>
                 <button type="submit" class="cart_button">
-                    <p class="cart_button_txt">CONTINUE SHOPPING</p>
+                    <p class="cart_button_txt">Continue Shopping</p>
                 </button>
             </div>
 
         </div>
-        <form class="pay_process" action="#">
-            <h1 class="cart_form_head">SHIPPING ADRESS</h1>
+        <form class="pay_process content" action="#">
+            <div class="cart_pay_process ">
+                <h1 class="cart_form_head">SHIPPING ADRESS</h1>
             <input class="cart_info" type="text" placeholder="Bangladesh">
             <input class="cart_info" type="text" placeholder="State">
             <input class="cart_info" type="text" placeholder="Postcode / Zip">
             <button class="cart_button cart_button_pay_process">
                 <p class="cart_button_txt cart_button_txt_pay_process">GET A QUOTE</p>
             </button>
+            </div>
             <div class="cart_checkout">
                 <p class="cart_checkout_sub">SUB TOTAL <span class="cart_checkout_sub_price">$900</span></p>
                 <p class="cart_checkout_grand">GRAND TOTAL <span class="cart_checkout_grand_price">$900</span></p>
