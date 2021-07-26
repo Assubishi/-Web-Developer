@@ -1,3 +1,5 @@
+$width-site: 1140px
+
 .product-top
     background: #F8F3F4
 
@@ -6,6 +8,7 @@
         justify-content: space-between
         padding: 60px
         align-items: center
+        
 
     &-txt-left
         text-transform: uppercase
@@ -26,6 +29,9 @@
 
     &-txt-right:hover
         color: #F16D7F
+
+.slider-img
+    width: 100%
 
 .new-arrivals-right
     color: #F16D7F
@@ -53,12 +59,14 @@
         color: #F16D7F
 
 .blocks
+    justify-content: center
     display: flex
     background: #F7F7F7
     height: 65px
 
 .block2
-    background: white
+    width: $width-site
+    background: #fff
     border-top: 1px solid #EAEAEA
     border-left: 1px solid #EAEAEA
     border-right: 1px solid #EAEAEA
@@ -69,8 +77,6 @@
     align-items: center
     border: 1px solid #EAEAEA
     border-top: transparent
-    padding-bottom: 65px
-    margin-bottom: 130px
 
     &-top
         display: flex
@@ -98,7 +104,7 @@
     margin-bottom: 48px
 
 .col-txt
-    width: 554px
+    max-width: 554px
     font-weight: 300
     @extend .text-decor
     text-align: center
@@ -112,6 +118,11 @@
     line-height: 29px
     color: #EF5B70
     margin-bottom: 65px
+
+.product-line
+    display: none
+    color: #EAEAEA
+    width: 175px
 
 .col-bot
     width: 641px
@@ -154,14 +165,13 @@
     align-items: center
     color: #F26376
     border: 1px solid #FF6A6A
-    padding: 14px 23px
     width: 220px
-    box-sizing: border-box
     text-decoration: none
     font-family: Lato
     font-size: 16px
     line-height: 19px
     position: relative
+    margin-bottom: 64px
 
     &:hover
         border: 1px solid transparent
@@ -181,5 +191,11 @@
 
 .product-items
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
-    margin-bottom: 42px
+    margin-top: 129px
+    margin-bottom: 128px
+
+.menu-boxes-2-level-product
+    margin-top: 0
+    margin-bottom: 0
